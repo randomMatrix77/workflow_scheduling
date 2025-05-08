@@ -1,7 +1,8 @@
 name: Periodic Cleanup
 on:
-  schedule:
-    - cron: "*/5 * * * *"  # every 5 minutes (UTC)
+  workflow_dispatch:
+#   schedule:
+#     - cron: "*/5 * * * *"  # every 5 minutes (UTC)
 jobs:
   delete-udu:
     runs-on: ubuntu-latest
