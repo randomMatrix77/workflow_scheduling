@@ -18,3 +18,8 @@ A GitHub project built to demonstrate or implement scheduled workflows for autom
    ```bash
    git clone https://github.com/randomMatrix77/workflow_scheduling.git
    cd workflow_scheduling
+
+2. Uncomment the part which runs the workflow once every 5 minutes in `scheduled_workflow.yml`:
+   ```yml
+   schedule:
+      - cron: "*/5 * * * *"  # every 5 minutes (UTC)
